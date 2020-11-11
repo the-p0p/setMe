@@ -1,6 +1,6 @@
 # Setme
 
-**A simple binary made in C to make exploitation of insecure NFS systems easier from Linux host.**
+**A simple binary made in C to make exploitation of insecure NFS systems easier from Linux host.**  
 This one binary avoids having to add users and groups (and later deleting) when going through many different users NFS directories.
 ##
 
@@ -9,14 +9,14 @@ Download the file setMe.c from the repo.
 
 Compile with:  
 **gcc setme.c -o setMe**
-Then:
+Then:  
 sudo chown root:root ./setMe && sudo chmod gu+s ./setMe
 
 *Considerations:*  
 I would make sure you keep access to this binary very restricted, or delete after use- but I guess you know that since your a pro.
 
 ##
-**Usage:
+**Usage:  
 sudo nmap --script=nfs-ls** victimIP
 Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-09 15:08 MST  
 Nmap scan report for 10.10.10.10  
@@ -41,16 +41,16 @@ PORT STATE SERVICE
 119/tcp open nntp  
 2049/tcp open nfs
 
-Say we want to get into **mikes files**, we execute our binary with:
-**./setME 1013 1013**
+Say we want to get into **mikes files**, we execute our binary with:  
+**./setME 1013 1013**  
 Then we can get varying levels of access to the files depending on how the permissions are set up on the share. 
 
-**Another example:**
-pop@kali:/setme/$ **./setMe 1013 1013**
-$ **id**
-uid=1013 gid=1013 groups=1013
-
-
+**Another example:**  
+pop@kali:/setme/$ **./setMe 1013 1013**  
+$ **id**  
+uid=1013 gid=1013 groups=1013  
+  
+  
 We are now free to browse the nfs folder shares pertaining to the uid and gid in this shell.
 To exit the shell type "exit".
 
