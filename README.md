@@ -17,7 +17,7 @@ I would make sure you keep access to this binary very restricted, or delete afte
 
 ##
 **Usage:  
-sudo nmap --script=nfs-ls** victimIP
+sudo nmap --script=nfs-ls** victimIP  
 Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-09 15:08 MST  
 Nmap scan report for 10.10.10.10  
 Host is up (0.097s latency).  
