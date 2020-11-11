@@ -1,6 +1,6 @@
 # Setme
 
-**A simple binary made in C to make exploitation of insecure NFS systems easier from Linux host.**  
+**A simple binary made in C to make exploitation of insecure NFS systems easier from a Linux host.**  
 This one binary avoids having to add users and groups (and later deleting) when going through many different users NFS directories.
 ##
 
