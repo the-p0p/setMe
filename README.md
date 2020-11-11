@@ -8,7 +8,7 @@ This one binary avoids having to add users and groups (and later deleting) when 
 Download the file setMe.c from the repo.
 
 Compile with:  
-**gcc setme.c -o setMe**
+**gcc setme.c -o setMe**  
 Then:  
 sudo chown root:root ./setMe && sudo chmod gu+s ./setMe
 
