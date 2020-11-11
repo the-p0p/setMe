@@ -4,15 +4,15 @@
 This one binary avoids having to add users and groups (and later deleting) when going through many different users NFS directories.
 ##
 
-**Installation**
+**Installation**  
 Download the file setMe.c from the repo.
 
-Compile with:
+Compile with:  
 **gcc setme.c -o setMe**
 Then:
 sudo chown root:root ./setMe && sudo chmod gu+s ./setMe
 
-*Considerations:*
+*Considerations:*  
 I would make sure you keep access to this binary very restricted, or delete after use- but I guess you know that since your a pro.
 
 ##
@@ -53,6 +53,5 @@ uid=1013 gid=1013 groups=1013
 
 We are now free to browse the nfs folder shares pertaining to the uid and gid in this shell.
 To exit the shell type "exit".
-
 
 
