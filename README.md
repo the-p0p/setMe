@@ -55,3 +55,4 @@ We are now free to browse the nfs folder shares pertaining to the uid and gid in
 To exit the shell type "exit".
 
 
+
