@@ -4,7 +4,7 @@
 This one binary avoids having to add users and groups (and later deleting) when going through many different users NFS directories.
 ##
 
-**Installation**  
+**Installation:**  
 Download the file setMe.c from the repo.
 
 Compile with:  
