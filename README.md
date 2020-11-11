@@ -42,7 +42,7 @@ PORT STATE SERVICE
 2049/tcp open nfs
   
 Say we want to get into **mikes files**, we execute our binary with:  
-**./setME 1013 1013**  
+**./setMe 1013 1013**  
 Then we can get varying levels of access to the files depending on how the permissions are set up on the share. 
 
 **Another example:**  
