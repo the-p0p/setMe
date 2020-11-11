@@ -34,13 +34,13 @@ PORT STATE SERVICE
 | drwxr-xr-x 0 0 4096 2015-09-17T13:21:59 .  
 | drwxr-xr-x 0 0 4096 2015-01-07T10:56:34 ..  
 | drwxr-xr-x **1013 1013** 4096 2016-11-23T10:17:47 mike  
-| drwxr-xr-x **1012 1012** 4096 2012-01-23T11:20:40 alex 
-| drwxr-xr-x **1011 1011** 4096 2017-06-23T10:32:52 jeff
+| drwxr-xr-x **1012 1012** 4096 2012-01-23T11:20:40 alex  
+| drwxr-xr-x **1011 1011** 4096 2017-06-23T10:32:52 jeff  
 | drwxr-xr-x **1014 1014** 4096 2015-12-1T21:11:51 james  
 |_  
 119/tcp open nntp  
 2049/tcp open nfs
-
+  
 Say we want to get into **mikes files**, we execute our binary with:  
 **./setME 1013 1013**  
 Then we can get varying levels of access to the files depending on how the permissions are set up on the share. 
