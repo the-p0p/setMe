@@ -10,7 +10,7 @@ Download the file setMe.c from the repo.
 Compile with:  
 **gcc setme.c -o setMe**  
 Then:  
-sudo chown root:root ./setMe && sudo chmod gu+s ./setMe
+**sudo chown root:root ./setMe && sudo chmod gu+s ./setMe**
 
 *Considerations:*  
 I would make sure you keep access to this binary very restricted, or delete after use- but I guess you know that since your a pro.
