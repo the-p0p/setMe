@@ -1,7 +1,7 @@
 # Setme
 
 **A simple binary made in C to make exploitation of insecure NFS systems easier from a Linux host.**  
-This one binary avoids having to add users and groups (and later deleting) when going through many different users NFS directories. Drop in a no_root_squash nfs directory,compile through the mounted nfs and execute the finished binary on target machine to give yourself root.
+This one binary avoids having to add users and groups (and later deleting) when going through many different users NFS directories. Drop in a no_root_squash nfs directory,compile through the mounted nfs and execute the finished binary on target machine to give yourself root. Alternatively quick nifty tool can be used with privilege escalation vectors such as privileged write/execution on a system, to simplify escalation during exploitation of said vector.
 ##
 
 **Installation:**  
@@ -9,11 +9,11 @@ Download the file setMe.c from the repo.
 
 Compile with:  
 **gcc setme.c -o setMe**  
-Then:  
+Then on target system:  
 **sudo chown root:root ./setMe && sudo chmod gu+s ./setMe**
 
 *Considerations:*  
-I would make sure you keep access to this binary very restricted, or delete after use- but I guess you know that since your a pro.
+I would make sure you keep access to this binary very restricted, or delete after use- but I guess you would know that since you made it this far ;) .
 
 ##
 **Usage:  
